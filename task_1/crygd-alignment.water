@@ -1,0 +1,272 @@
+########################################
+# Program: water
+# Rundate: Sun 13 Apr 2025 01:39:33
+# Commandline: water
+#    -asequence crygd-hs.fna
+#    -bsequence crygd-mm.fna
+#    -outfile crygd.water
+# Align_format: srspair
+# Report_file: crygd.water
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: c208124524-208121607
+# 2: c65102598-65101001
+# Matrix: EDNAFULL
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 2977
+# Identity:    1273/2977 (42.8%)
+# Similarity:  1273/2977 (42.8%)
+# Gaps:        1461/2977 (49.1%)
+# Score: 3722.0
+# 
+#
+#=======================================
+
+c208124524-20     18 CACCAGCTCAGCACCGCCGTGCGCCCAGCCAGCCATGGGGAAGGTGAGCC     67
+                     |||||.|.||  .|||.|.|||...|| ||||||||||||||||||||||
+c65102598-651      7 CACCATCCCA--TCCGACCTGCCAACA-CCAGCCATGGGGAAGGTGAGCC     53
+
+c208124524-20     68 CAGCCTGCGCCCCGGGACCCCGGAGCTTCCTCCATCGCGGGGGCCAGAGA    117
+                     ||                    |.||.|||| |||...|||   .||.||
+c65102598-651     54 CA--------------------GGGCATCCT-CATTTTGGG---AAGGGA     79
+
+c208124524-20    118 ------CTGGGG--CAGG----AGCAGGCCTGTGAGACCTCGCCTTGTCC    155
+                           ||||||  ||||    |.|||||||.||||.||| |||||    
+c65102598-651     80 CCTGCCCTGGGGGCCAGGCCACATCAGGCCTCTGAGCCCT-GCCTT----    124
+
+c208124524-20    156 CGCCTTGCCTTGCAGATCACCCTCTACGAGGACCGGGGCTTCCAGGGCCG    205
+                      ||||||||||.|||||||||.||||.||||||||.||||||||||||||
+c65102598-651    125 -GCCTTGCCTTACAGATCACCTTCTATGAGGACCGCGGCTTCCAGGGCCG    173
+
+c208124524-20    206 CCACTATGAATGCAGCAGCGACCACCCCAACCTGCAGCCCTACTTGAGCC    255
+                     |||||||||.|||||||.|||||||.|||||||||||||||||||.||||
+c65102598-651    174 CCACTATGAGTGCAGCACCGACCACTCCAACCTGCAGCCCTACTTCAGCC    223
+
+c208124524-20    256 GCTGCAACTCGGCGCGCGTGGACAGCGGCTGCTGGATGCTCTATGAGCAG    305
+                     ||||||||||.|.||||||||||||.||||||||||||||||||||||||
+c65102598-651    224 GCTGCAACTCTGTGCGCGTGGACAGTGGCTGCTGGATGCTCTATGAGCAG    273
+
+c208124524-20    306 CCCAACTACTCGGGCCTCCAGTACTTCCTGCGCCGCGGCGACTATGCCGA    355
+                     |||||||.|.|||||..|||||||||||||||.|||||.|||||..|.||
+c65102598-651    274 CCCAACTTCACGGGCTGCCAGTACTTCCTGCGTCGCGGGGACTACCCTGA    323
+
+c208124524-20    356 CCACCAGCAGTGGATGGGCCTCAGCGACTCGGTCCGCTCCTGCCGCCTCA    405
+                     |.||||||||||||||||..||||.|||||.|||||||||||||||||||
+c65102598-651    324 CTACCAGCAGTGGATGGGTTTCAGTGACTCTGTCCGCTCCTGCCGCCTCA    373
+
+c208124524-20    406 TCCCCCACGTGAGT--ACATCCTCAAGTCAGGACCCAGGCCCTCAGGACA    453
+                     ||||||||||||||  |.||.|||||     |||..||||.||.|.|||.
+c65102598-651    374 TCCCCCACGTGAGTCCAGATTCTCAA-----GACTGAGGCACTGAAGACC    418
+
+c208124524-20    454 CTCACTGGATGGTTTCAAGCA-AAAGTTAAACATTAGAAGTAGTGATCAG    502
+                     ||.||||.|  |||.|.||.| ||.||||||..||..|||.||       
+c65102598-651    419 CTGACTGCA--GTTGCCAGTATAAGGTTAAATGTTGAAAGCAG-------    459
+
+c208124524-20    503 TCACAATAACTGAGAGTG--------GACAAA-----AGAT-GAACTATA    538
+                            |.|||||..||        ||.|||     ||.| |||.||  
+c65102598-651    460 -------AGCTGAGCCTGCTTGTAAAGAAAAACCCATAGCTAGAATTA--    500
+
+c208124524-20    539 GTGGATTAAGTCAATAGAGTTTGCTCCCCAC--------ATAAGCAAAGT    580
+                         ||||.||||||||       |.|||||        |.||||||.||
+c65102598-651    501 ----ATTAGGTCAATAG-------TTCCCACAACATCCAAAAAGCAAGGT    539
+
+c208124524-20    581 ATTACCCAGACACCAGTTAATCACAATTAATCCA----CAAATATGTATT    626
+                     .||||||||           |.||||.||.||.|    |...||.|||||
+c65102598-651    540 GTTACCCAG-----------TTACAACTATTCTATTGGCCCCTACGTATT    578
+
+c208124524-20    627 ----GAGTAGGAATGTGTCTCCTGCC--CTAG-GGGTTGTATAAGACTTA    669
+                         |..||.|||.|..|    ||.|  |.|| |||.|||||.|.|..|.
+c65102598-651    579 TGTGGCATAAGAACGCAT----TGGCAGCAAGCGGGCTGTATGAAATCTG    624
+
+c208124524-20    670 AGTCCTATTCTGGAATCATTTAGAATGGAGTTGTAGAAAAACCACTAATA    719
+                     ||||||.|..||.||||||||||.|||||                 ||  
+c65102598-651    625 AGTCCTGTCATGCAATCATTTAGGATGGA-----------------AA--    655
+
+c208124524-20    720 CCCAATAGAAGAATAAATGCTAGAGCGTACAGCAGTTACTGAGCAAACAG    769
+                        |||||       ||||            |..|.||||||.||.| ||
+c65102598-651    656 ---AATAG-------AATG------------GTGGCTACTGAACACA-AG    682
+
+c208124524-20    770 GGTAATT-TCTTTTGAGACTTTTTCC-CGTTTTTGCTCCTCT-CTTGCAT    816
+                     .|||||| |..||..||.|....||| |.|||||| |||||| |.|||||
+c65102598-651    683 AGTAATTATGCTTAAAGTCCCCCTCCTCCTTTTTG-TCCTCTACGTGCAT    731
+
+c208124524-20    817 ATTTTGGGTTTTCCCAACCTATATAAGT--AAGACTTTCC-TTCAAAGGA    863
+                     ||.|.|||.||.|.|.|.|||..|..||  |||    ||| |||.|  .|
+c65102598-651    732 ATCTGGGGGTTCCTCCATCTAATTCGGTCGAAG----TCCTTTCGA--CA    775
+
+c208124524-20    864 GAGCAACACACATATTTTACACATGTGTCCCTTTTATCCCATATGTGTGT    913
+                     ||||||||||.||.|||||||..||                         
+c65102598-651    776 GAGCAACACAGATGTTTTACAGCTG-------------------------    800
+
+c208124524-20    914 TAGAACACTAAAGTTTATGCAAAATTCGTCCTTGGACTTACTGATGTT-T    962
+                                         ||||.|.|..||||..|||||||||.|| |
+c65102598-651    801 --------------------AAAAATGGCTCTTGTGCTTACTGATTTTAT    830
+
+c208124524-20    963 CTTCCTCCATTTTT-CTTCATTGCATTCACAAGTTATTGACTTAGAATTA   1011
+                     ||  |||||||||| |.|||||                            
+c65102598-651    831 CT--CTCCATTTTTCCCTCATT----------------------------    850
+
+c208124524-20   1012 ATTGTTCTTTAATATATGAAGATATTTAACATTTTATATTTTAATATATT   1061
+                                                                       
+c65102598-651    850 --------------------------------------------------    850
+
+c208124524-20   1062 TTAAATATTTATATTTTAATATATTTAAAACACTTATATTTTGAATAGAA   1111
+                         |||||||||    ||| ||||   |||                   
+c65102598-651    851 ----ATATTTATA----AAT-TATT---AAC-------------------    869
+
+c208124524-20   1112 GGCTTATATATTTAACATATTTTATTTATGTCATTGATTTAAATGATGCA   1161
+                                |.|.||            |||||||              
+c65102598-651    870 -----------TGAGCA------------GTCATTG--------------    882
+
+c208124524-20   1162 TTATCATTTAATTCAATATATTAAATGATATATTTAATATATTTTAAATA   1211
+                     ||.||                    |||                      
+c65102598-651    883 TTGTC--------------------TGA----------------------    890
+
+c208124524-20   1212 CTTATATTTAAAATACATATTTTTATATTTTAAATATATTTACATTAAAT   1261
+                                                             .||.|.||||
+c65102598-651    891 ----------------------------------------GACCTAAAAT    900
+
+c208124524-20   1262 ATATTTAATGAATATAATGTATTTAATAATATATTTATTTAATAAATATG   1311
+                     ||      |||||||                      |||||||.||   
+c65102598-651    901 AT------TGAATAT----------------------TTTAATACAT---    919
+
+c208124524-20   1312 TATTTAATATATTTATATAACTACATAAATTATATTATATTTTAAATATA   1361
+                       |||||||||                                       
+c65102598-651    920 --TTTAATATA---------------------------------------    928
+
+c208124524-20   1362 TTTAACATATTTTAAATATATTTTAATATATTTTTAATATATTTCATTTA   1411
+                                             ||.|.|||||                
+c65102598-651    929 ------------------------AAAACATTTT----------------    938
+
+c208124524-20   1412 CATTATATGTGTGTATATATATATTTTTGTTGTTGTTGTTTTGTTTTTGT   1461
+                                                                       
+c65102598-651    938 --------------------------------------------------    938
+
+c208124524-20   1462 TTTTTGAAACAGAGTCTCACTCTGACGCCCAGGCTGGAGTGCAGTGGTGC   1511
+                                                |||                   |
+c65102598-651    939 ---------------------------CCC-------------------C    942
+
+c208124524-20   1512 AATCTCGGCTCACTGCAACCTCCGCCTCCTGGATTCAAATGATTCTCGTC   1561
+                     |||         |.||||.|                              
+c65102598-651    943 AAT---------CAGCAAAC------------------------------    953
+
+c208124524-20   1562 TCTCAGTCTCCTGAGTAGCTGGAGTTACAGGAGCACGCCACCACACCCAG   1611
+                        ||        |||||                                
+c65102598-651    954 ---CA--------AGTAG--------------------------------    960
+
+c208124524-20   1612 CTAATTTTTGTATTTTTATTTTTATTTTATTTTATTTTATTATTTATTAT   1661
+                      |||                                              
+c65102598-651    961 -TAA----------------------------------------------    963
+
+c208124524-20   1662 TATTATTTTTTTTGACGAAGTCTTGCTCTGTTCCCCACGCTGGAGTGCAG   1711
+                                     ||||       |||||          ||   |||
+c65102598-651    964 ----------------GAAG-------CTGTT----------GA---CAG    977
+
+c208124524-20   1712 TGGCATGATCTCGGCACACTGCAACCTCTGCTTCCTGG-GCCCTAGCAAT   1760
+                     |  ||||||.|              ||||     |||| |         |
+c65102598-651    978 T--CATGATTT--------------CTCT-----CTGGTG---------T    997
+
+c208124524-20   1761 TTTCTTCCCAAGTA-GCTGGGATTACAGGCACCCGCCACCACACCTGGCT   1809
+                     ||.|||..| |||| ||||    .|||||                     
+c65102598-651    998 TTGCTTTAC-AGTATGCTG----CACAGG---------------------   1021
+
+c208124524-20   1810 AATTTTTGTATTTTTAGTATAGACAAGGTTTCGCCATATTCGTCAGGCTG   1859
+                                                                 ||| ||
+c65102598-651   1022 --------------------------------------------AGG-TG   1026
+
+c208124524-20   1860 GTCTTGAACTCCTGACCTCAAGTGATCCACCTGCCTCGGCTTCCCAGGGT   1909
+                     || |||                                            
+c65102598-651   1027 GT-TTG--------------------------------------------   1031
+
+c208124524-20   1910 GCTGGGACTACAGGCATGAGCCACTGCCCCACCCCTTATATTTCTGTATT   1959
+                        ||..||.|||                           ||||||    
+c65102598-651   1032 ---GGCCCTGCAG---------------------------TTTCTG----   1047
+
+c208124524-20   1960 TTAAATATATTTTATTTATATTTTAGTAAAGTTATTTTAAAATAAAATAT   2009
+                                                                       
+c65102598-651   1047 --------------------------------------------------   1047
+
+c208124524-20   2010 AATTTGTAAAATAAATATAATTTTAATTTATACTTATAAAATATAATTTG   2059
+                                                                       
+c65102598-651   1047 --------------------------------------------------   1047
+
+c208124524-20   2060 AATATAATTATTAAAATAAAATATGATTAACTTTAAATAAAATATAATTT   2109
+                                                                       
+c65102598-651   1047 --------------------------------------------------   1047
+
+c208124524-20   2110 TATACATTTTATAATATATTTTAAATATAGTATATAATTAAATATGTATT   2159
+                                                                       
+c65102598-651   1047 --------------------------------------------------   1047
+
+c208124524-20   2160 AGATATCATATGTATATTAAAATTATACATTATTTAAATATATTTCTTTA   2209
+                                                                       
+c65102598-651   1047 --------------------------------------------------   1047
+
+c208124524-20   2210 TAATTTAATGTTTATTTTAATATTAAAACATTTCTTCAAAATGGTATAAA   2259
+                                             ||.|||                    
+c65102598-651   1048 ------------------------AACACA--------------------   1053
+
+c208124524-20   2260 ATAGTAATAAGCTGTTACAGGTTTGGATTTGCATGTGGTACAGGATACTG   2309
+                                                                       
+c65102598-651   1053 --------------------------------------------------   1053
+
+c208124524-20   2310 AGCCTAGGAGGCAGCTCATCCTAAGAAATAGCTGAATATATTAAAGAGTG   2359
+                                   |||||                               
+c65102598-651   1054 --------------CTCAT-------------------------------   1058
+
+c208124524-20   2360 AGATTTCCTTCTCAATTTC--TTCACCACACTTCATAATCTT-GAAAAGG   2406
+                       |.|||||||||.|.|||  |||..||.|||||.|.||||| |||||| 
+c65102598-651   1059 --AGTTCCTTCTCCAATTCATTTCCTCATACTTCCTGATCTTAGAAAAG-   1105
+
+c208124524-20   2407 TACT-GAATCTCTGTGCTCGGTAATGAGGAGTTTATAAATATTCAGAATT   2455
+                      .|| |||  ||||..||| .||.|||.||||||||||..|.||.||.||
+c65102598-651   1106 -CCTGGAA--TCTGCCCTC-ATAGTGACGAGTTTATAAGAAGTCTGAGTT   1151
+
+c208124524-20   2456 AATTAA---ATTTTACCATGTATTTCAAAATGGCTTGA-GCGGGTCCTCA   2501
+                     ||||||   ||||| ..||.||.||| ||||||||||| ||         
+c65102598-651   1152 AATTAATGCATTTT-TTATCTAGTTC-AAATGGCTTGATGC---------   1190
+
+c208124524-20   2502 CCAAGCT--GGACTGCCTAACAATGCATTGGAATCATTTCACACTTGCTT   2549
+                        ||||  ||.|..||||||   |||||.|||||..|||||..||||||
+c65102598-651   1191 ---AGCTGAGGCCATCCTAAC---GCATTAGAATCGCTTCACCGTTGCTT   1234
+
+c208124524-20   2550 TTCTTCTCTTTTTATTTCTGGGTCCGCCAGTCTGGCTCTCACAGGATCAG   2599
+                     |       ||..|.||||||||.|.|||||.|.|||||||||||||||||
+c65102598-651   1235 T-------TTACTGTTTCTGGGCCTGCCAGGCCGGCTCTCACAGGATCAG   1277
+
+c208124524-20   2600 ACTCTATGAGAGAGAGGACTACAGAGGCCAGATGATAGAGTTCACTGAGG   2649
+                     |||.||.|||||.||.||.||||||||||||||||||||||||||.||||
+c65102598-651   1278 ACTGTACGAGAGGGAAGAGTACAGAGGCCAGATGATAGAGTTCACGGAGG   1327
+
+c208124524-20   2650 ACTGCTCCTGTCTTCAGGACCGCTTCCGCTTCAATGAAATCCACTCCCTC   2699
+                     |||||.|||.|||.||||||||.||||.|||||||||.|||.||||||||
+c65102598-651   1328 ACTGCCCCTCTCTCCAGGACCGATTCCACTTCAATGAGATCTACTCCCTC   1377
+
+c208124524-20   2700 AACGTGCTGGAGGGCTCCTGGGTCCTCTACGAGCTGTCCAACTACCGAGG   2749
+                     ||.|||||.|||||||.|||||||||||||||..||.||||||||||.||
+c65102598-651   1378 AATGTGCTAGAGGGCTGCTGGGTCCTCTACGACATGACCAACTACCGGGG   1427
+
+c208124524-20   2750 ACGGCAGTACCTGCTGATGCCAGGGGACTATAGGCGCTACCAGGACTGGG   2799
+                     |.||||||||.||||.|..||.|||||.||.|||||||||||.|||||||
+c65102598-651   1428 AAGGCAGTACTTGCTCAGACCCGGGGAGTACAGGCGCTACCACGACTGGG   1477
+
+c208124524-20   2800 GGGCCACGAATGCCAGAGTGGGCTCTCTGAGGAGAGTCATAGATTTCTCC   2849
+                     |.||||.|||||||||.|||||||||||||||||||||||.|||||||.|
+c65102598-651   1478 GCGCCATGAATGCCAGGGTGGGCTCTCTGAGGAGAGTCATGGATTTCTAC   1527
+
+c208124524-20   2850 TGAAATATGTCCTCTTTTGTT--------GTTTCTTAATTTGGAAACTAA   2891
+                     ||||.|      ..||||.||        .|||||..|||||||..||||
+c65102598-651   1528 TGAATT------GGTTTTTTTACTCTACCCTTTCTCCATTTGGACGCTAA   1571
+
+c208124524-20   2892 TAAAATATTTTCTGTGTGTTCCTGGCA   2918
+                     |||||||||||||||||||||||||||
+c65102598-651   1572 TAAAATATTTTCTGTGTGTTCCTGGCA   1598
+
+
+#---------------------------------------
+#---------------------------------------
