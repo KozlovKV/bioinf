@@ -1,0 +1,80 @@
+CLUSTAL O(1.2.4) multiple sequence alignment
+
+
+XP_013875510.1      ------------MGKITFFEEKKFQGRCYNCSSECADLHTHFSRCNSIRVESGVWVIYER	48
+XP_048094426.1      MSAVVFLASQTPPLQIIFYEDKNFQGRRYECDSDCSDFHAYLNRCNSIRVESGAWVVYER	60
+XP_064167613.1      ------------MGKIIFYEDRNFQGRSYECSNDCTDLHSYFNRCNSIRVESGCFMIYER	48
+XP_027729533.1      ------------MGKIIFFEDRGFQGRCYECSSDNANLQPYFSRCNSIRVDSGCWMIYER	48
+NP_066269.1         ------------MGKITFYEDRAFQGRSYETTTDCPNLQPYFSRCNSIRVESGCWMLYER	48
+XP_062958723.1      ------------MGKITFYEDRGFQGRCYECSSDCPNLQPYFSRCNSVRVDSGCWMLYER	48
+XP_062057631.1      ------------MGKIIFYEDRGFQGRCYECSSDCPNLQPYFSRCNSIRVDSGCWMLYER	48
+XP_005397170.1      ------------MGKITFYEDRGFQGRCYECSTDCPNLQPYFSRCNSIR-----------	37
+XP_036850888.1      ------------MGKITFYEDRGFQGRCYECSSDCPNLQPYFSRCNSIRVDSGCWMLYER	48
+XP_006975048.1      ------------MGKITFYEDRGFQGRCYECSSDCPNLQTYFSRCNSIRVDSGCWMLYER	48
+XP_027445407.1      ------------MGKITFYEDRGFQGRCYECSSDHPNLQPYFSRCNSIRVDSGCWMLYER	48
+                                  :* *:*:: **** *:  .:  ::: ::.****:*           
+
+XP_013875510.1      PNYKGFQYVLTPGEYADSQQWMAFSDNVKSCRGVKNVYGSACKLRLYERPDFSGQMVECS	108
+XP_048094426.1      PNYMGYQYVLNRGEYPDYQRWMGLNDRLSSCKMVHFVSP-QYKIKFYDKPEFAGQAYEAS	119
+XP_064167613.1      PNYMGHQYFMRRGEYPDYQRWMGFSSCIRSCRMIPMYRG-SYRLRIYEKADFSGHMMEFM	107
+XP_027729533.1      PNYSGHQYYLRRGEYPDYQEWMGFNDSIRSCQIIPY-TG-SHRIRLYEREDYKGQMMELT	106
+NP_066269.1         PNYQGQQYLLRRGEYPDYQQWMGLSDSIRSCCLIPQ-TV-SHRLRLYEREDHKGLMMELS	106
+XP_062958723.1      PNYQGLQYFLRRGEYPDYQQWMGLSDVVRSCYLIPQQTG-SHRIRLYEREDHKGLMKELS	107
+XP_062057631.1      PNYQGHQYFLRRGEYPDYQQWMGLSDSIRSCCLIPQ-TS-SHRMRLYEKDDHKGLMMELS	106
+XP_005397170.1      -------------------------------------AG-SHRMRLYEREDHKGLMMELS	59
+XP_036850888.1      PSYQGHQYFVRRGDYPDYQHWMGLSDSVRSCRLIP-QTG-SHRLRLYEREDHKGLMMELS	106
+XP_006975048.1      PNYQGHQYFLRRGDYPDYQQWMGFSDSIRSCRLIPHQTG-SHRMRLYEREDHKGLMMELS	107
+XP_027445407.1      PNYQGHQYFLRRGDYPDYQQWLGFSDSIRSCRLIPQ-TS-SHRLRLYEREDHKGLMMELS	106
+                                                              ::::*:: :. *   *  
+
+XP_013875510.1      DDCSSVYDTYKMREAYSCVVTDGAWVLYDLPNYRGHQYLLERGEYRQHSDWGASSPGVGS	168
+XP_048094426.1      EDCPSVLEQFRLREVHSCKVVEGFWVFYEHPNFRGRQYFLEKGDYRKPANWGAVCATVQS	179
+XP_064167613.1      DDCPCVSDRFHHRHVYSCNVMNGFWIFYEYPNYRGRQYFLRPGEYRRYREWCATCAIVGS	167
+XP_027729533.1      DDCSCVQDRFHLNEIYSLNVLEGCWVLYEMPNYRGRQFLLRPGEYRRYLDWGAMNAKVGS	166
+NP_066269.1         EDCPSIQDRFHLSEIRSLHVLEGCWVLYELPNYRGRQYLLRPQEYRRCQDWGAMDAKAGS	166
+XP_062958723.1      EDCSCIQDRFHLSEIRSLHVLEGCWVLYEMPNYRGRQYLLRPQEYRRYQDWGAVDAKAGS	167
+XP_062057631.1      EDCSCIQDRFHLSEVRSLHVLEGCWVLYEMPNYRGRQYLLRPQEYRRYQDWGAMDAKAGS	166
+XP_005397170.1      EDCSCIQDRFHLSEVRSLHVLEGHWVLYELPNYRGRQYLLRPQEYRRYHDWGAMDAKAGS	119
+XP_036850888.1      EDCSCIQDRFHLSEVRSLHVLEGCWVLYELPNYQGRQYLLRPQEYRRYHDWGAVDAKAGS	166
+XP_006975048.1      EDCSCIQDRFHLSEVRSLHVLEGCWVLYEMPNYRGRQYLLRPQEYRRYHDWGAVDAKAGS	167
+XP_027445407.1      EDCSCIQDRFHLSEVRSLHVLEGCWVLYELPNYRGRQYLLRPQEYRRYHDWGATEAKAGS	166
+                    :** .: : ::  .  *  * :* *::*: **::*:*::*.  :**:  :* *    . *
+
+XP_013875510.1      FRRIIIFYEDRNFQGRYHECVNDSSEMHTYISRCKSIKVLGGFWVVYERPNYIGHQYVLS	228
+XP_048094426.1      FRRLTE------------------------------------------------------	185
+XP_064167613.1      FRRVTDF-----------------------------------------------------	174
+XP_027729533.1      LRRVIDVC----------------------------------------------------	174
+NP_066269.1         LRRVVDLY----------------------------------------------------	174
+XP_062958723.1      LRRAVDLY----------------------------------------------------	175
+XP_062057631.1      LRRVVDLY----------------------------------------------------	174
+XP_005397170.1      LRRVVDLY----------------------------------------------------	127
+XP_036850888.1      LRRVVDLY----------------------------------------------------	174
+XP_006975048.1      LRRVVDLY----------------------------------------------------	175
+XP_027445407.1      LRRVVDLY----------------------------------------------------	174
+                    :**                                                         
+
+XP_013875510.1      PGEYPDYQYWLGINDAIRSCRIIRQVGSSWRMTIWEKPNFEGESLELRENMPTFLELWQN	288
+XP_048094426.1      ------------------------------------------------------------	185
+XP_064167613.1      ------------------------------------------------------------	174
+XP_027729533.1      ------------------------------------------------------------	174
+NP_066269.1         ------------------------------------------------------------	174
+XP_062958723.1      ------------------------------------------------------------	175
+XP_062057631.1      ------------------------------------------------------------	174
+XP_005397170.1      ------------------------------------------------------------	127
+XP_036850888.1      ------------------------------------------------------------	174
+XP_006975048.1      ------------------------------------------------------------	175
+XP_027445407.1      ------------------------------------------------------------	174
+                                                                                
+
+XP_013875510.1      RDVHSCKVXEGAWIFYEHPNYRGRQMLLEKGEYRQYSEWGGRDPTVGSIRRVKS	342
+XP_048094426.1      ------------------------------------------------------	185
+XP_064167613.1      ------------------------------------------------------	174
+XP_027729533.1      ------------------------------------------------------	174
+NP_066269.1         ------------------------------------------------------	174
+XP_062958723.1      ------------------------------------------------------	175
+XP_062057631.1      ------------------------------------------------------	174
+XP_005397170.1      ------------------------------------------------------	127
+XP_036850888.1      ------------------------------------------------------	174
+XP_006975048.1      ------------------------------------------------------	175
+XP_027445407.1      ------------------------------------------------------	174
+                                                                          
