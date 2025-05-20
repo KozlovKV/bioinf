@@ -1,8 +1,10 @@
 __pycache__
+file_store
 
 seq.fastq.gz
 hg38.fa
 
 bash_pipeline_outputs
+toil_pipeline_outputs
 
 .venv

@@ -1,4 +1,4 @@
-# *Козлов Кирилл*, Биоинформатика-1, Задание 3
+# *Козлов Кирилл*, Биоинформатика-1, Задание 3 - Построение пайплайна получения генетических вариантов
 ## Стэк
 Minimap + Toil
 
@@ -37,6 +37,8 @@ sudo apt install fastqc samtools minimap2 -y
 ./pipeline.sh <seqence_file.fasta.gz> <reference_file.fa>
 ```
 
+Вывод `fastqc` и `samtools flagstat` можно найти в [этой папке](./results/bash/)
+
 ## Toil
 ### Найстройка окружения
 ```bash
@@ -55,7 +57,15 @@ python3 hello_world.py file:hello-world-store
 ```
 
 ### Пайплайн
+Код в файле [`./pipeline.py`](./pipeline.py)
 ```bash
 source .venv/bin/activate
-python3 pipeline.py <seqence_file.fasta.gz> <reference_file.fa>
+python3 pipeline.py file:<dir_for_tmp_files> <seqence_file.fasta.gz> <reference_file.fa> <output_dir>
+# например
+# python3 pipeline.py file:file_store seq.fastq.gz hg38.fa ./toil_pipeline_outputs --defaultMemory=8Gi --defaultCores=8 --defaultDisk=20Gi
 ```
+
+FastQC-репорт, оценку выравнивания и логи пайплайна можно найти в [этой папке](./results/toil/)
+
+Встроенное средство для построения графа пайплайна в Toil оказалаось нерабочим, поэтому не вижу смысла рисовать картинку вручную, так как по последовательности выполнения работы нет никаких отличий
+- Единтсвенное - анализ исходного генома через **FastQC запускается параллельно** основному пайплайну, так как его результат нигде далее не задействуется

@@ -1,0 +1,60 @@
+Recording workflow creation of 3f3d82e4-c3bc-49d4-b916-ca6228a98e06 in file:/mnt/d/NSU/private/3-2/bio_inf/repo/task_3/file_store
+Importing input file:///mnt/d/NSU/private/3-2/bio_inf/repo/task_3/seq.fastq.gz...
+Importing input file:///mnt/d/NSU/private/3-2/bio_inf/repo/task_3/hg38.fa...
+Workflow 3f3d82e4-c3bc-49d4-b916-ca6228a98e06 is a run of /mnt/d/NSU/private/3-2/bio_inf/repo/task_3/pipeline.py
+Workflow 3f3d82e4-c3bc-49d4-b916-ca6228a98e06 stopped. Success: False
+Successfully deleted the job store: FileJobStore(/mnt/d/NSU/private/3-2/bio_inf/repo/task_3/file_store)
+Recording workflow creation of 9ad27ed5-ff4c-4c4a-8330-41e3f26df07b in file:/mnt/d/NSU/private/3-2/bio_inf/repo/task_3/file_store
+Importing input file:///mnt/d/NSU/private/3-2/bio_inf/repo/task_3/seq.fastq.gz...
+Importing input file:///mnt/d/NSU/private/3-2/bio_inf/repo/task_3/hg38.fa...
+Workflow 9ad27ed5-ff4c-4c4a-8330-41e3f26df07b is a run of /mnt/d/NSU/private/3-2/bio_inf/repo/task_3/pipeline.py
+Running Toil version 8.2.0-3efbe6f84b89a1eeab1d7b5913bbd01084d6490e on host kirill-main.
+Starting real-time logging.
+Issued job 'Job' kind-Job/instance-_e0k4lnb v1 with job batch system ID: 1 and disk: 20.0 Gi, memory: 8.0 Gi, cores: 8.0, accelerators: [], preemptible: False
+1 jobs are running, 0 jobs are issued and waiting to run
+Issued job 'index_reference' kind-index_reference/instance-cdd4syys v1 with job batch system ID: 2 and disk: 20.0 Gi, memory: 8.0 Gi, cores: 8.0, accelerators: [], preemptible: False
+Issued job 'fastqc' kind-fastqc/instance-aqyeuckl v1 with job batch system ID: 3 and disk: 20.0 Gi, memory: 8.0 Gi, cores: 8.0, accelerators: [], preemptible: False
+Got message from job at time 05-20-2025 18:43:01: ==> Indexing reference
+minimap2 -d /tmp/toilwf-6c86ab1eabae57979f9bb297516f95bd/a1e3/job/tmp19g028ew/ref.mmi /tmp/toilwf-6c86ab1eabae57979f9bb297516f95bd/a1e3/job/tmp__k1oh26.tmp
+Got message from job at time 05-20-2025 18:43:01: [OK] Indexing reference succeeded.
+Got message from job at time 05-20-2025 18:43:01: ==> Aligning reads
+minimap2 -a /tmp/toilwf-6c86ab1eabae57979f9bb297516f95bd/a1e3/99ad/tmpfy04fw_i.tmp /tmp/toilwf-6c86ab1eabae57979f9bb297516f95bd/a1e3/99ad/tmpfj1a168n.tmp > /tmp/toilwf-6c86ab1eabae57979f9bb297516f95bd/a1e3/99ad/tmpb4eum3be/aligned.sam
+Got message from job at time 05-20-2025 18:43:01: [OK] Aligning reads succeeded.
+Got message from job at time 05-20-2025 18:43:01: Job used more disk than requested. For CWL, consider increasing the outdirMin requirement, otherwise, consider increasing the disk requirement. Job 'align_reads' kind-index_reference/instance-cdd4syys v3 used 100.64% disk (20.1 GiB [21611511808B] used, 20.0 GiB [21474836480B] requested).
+Got message from job at time 05-20-2025 18:43:01: ==> Converting SAM to BAM
+samtools view -b /tmp/toilwf-6c86ab1eabae57979f9bb297516f95bd/a1e3/e4ed/tmpjx41m0nq.tmp > /tmp/toilwf-6c86ab1eabae57979f9bb297516f95bd/a1e3/e4ed/tmpehx0th0b/aligned.bam
+Got message from job at time 05-20-2025 18:43:01: [OK] Converting SAM to BAM succeeded.
+Got message from job at time 05-20-2025 18:43:01: ==> Generating alignment stats
+samtools flagstat /tmp/toilwf-6c86ab1eabae57979f9bb297516f95bd/a1e3/acec/tmpdozv4qqm.tmp > /tmp/toilwf-6c86ab1eabae57979f9bb297516f95bd/a1e3/acec/tmp0pv9cvz8/alignment_report.txt
+Got message from job at time 05-20-2025 18:43:01: [OK] Generating alignment stats succeeded.
+Issued job 'evaluate' kind-evaluate/instance-4p44v5xh v1 with job batch system ID: 4 and disk: 20.0 Gi, memory: 8.0 Gi, cores: 8.0, accelerators: [], preemptible: False
+Issued job 'export_outputs' kind-export_outputs/instance-1lpzj6q4 v1 with job batch system ID: 5 and disk: 20.0 Gi, memory: 8.0 Gi, cores: 8.0, accelerators: [], preemptible: False
+Got message from job at time 05-20-2025 18:46:29: ==> Running FastQC on /tmp/toilwf-6c86ab1eabae57979f9bb297516f95bd/e115/job/tmpoa367w_h/sample.fastq.gz
+fastqc /tmp/toilwf-6c86ab1eabae57979f9bb297516f95bd/e115/job/tmpoa367w_h/sample.fastq.gz
+Got message from job at time 05-20-2025 18:46:29: [OK] Running FastQC on /tmp/toilwf-6c86ab1eabae57979f9bb297516f95bd/e115/job/tmpoa367w_h/sample.fastq.gz succeeded.
+Got message from job at time 05-20-2025 18:46:34: 33590155 + 0 in total (QC-passed reads + QC-failed reads)
+27030818 + 0 primary
+6541171 + 0 secondary
+18166 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+33071756 + 0 mapped (98.46% : N/A)
+26512419 + 0 primary mapped (98.08% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+
+Got message from job at time 05-20-2025 18:46:34: Mapped: 98.0%
+Got message from job at time 05-20-2025 18:46:34: Result: OK
+Got message from job at time 05-20-2025 18:46:39: Exported output files to /mnt/d/NSU/private/3-2/bio_inf/repo/task_3/toil_pipeline_outputs
+Importing input file:///mnt/d/NSU/private/3-2/bio_inf/repo/task_3/succeeded.log...
+Finished toil run successfully.
+Stopping real-time logging server.
+Joining real-time logging server thread.
+Workflow 9ad27ed5-ff4c-4c4a-8330-41e3f26df07b stopped. Success: True
+Successfully deleted the job store: FileJobStore(/mnt/d/NSU/private/3-2/bio_inf/repo/task_3/file_store)

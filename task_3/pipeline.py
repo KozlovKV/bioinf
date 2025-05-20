@@ -16,15 +16,12 @@ def run_cmd(job, cmd, description):
     return result.stdout
 
 # FastQC
-def fastqc(job, fastq_id, toil: Toil):
+def fastqc(job, fastq_id):
     fixed_fastq_path = os.path.join(job.tempDir, "sample.fastq.gz")
     job.fileStore.readGlobalFile(fastq_id, userPath=fixed_fastq_path)
     fastqc_report_path = os.path.join(job.tempDir, "sample_fastqc.html")
     run_cmd(job, f"fastqc {fixed_fastq_path}", f"Running FastQC on {fixed_fastq_path}")
-    toil.export_file(
-        job.fileStore.writeGlobalFile(fastqc_report_path), 
-        "fastqc_report.html"
-    )
+    return job.fileStore.writeGlobalFile(fastqc_report_path)
 
 
 # Индексация референса
@@ -57,35 +54,41 @@ def flagstat(job, bam_id):
     return job.fileStore.writeGlobalFile(report_path)
 
 # Оценка результата
-def evaluate(job, report_id, toil: Toil):
-    toil.export_file(report_id, "alignment_report.txt")
-
+def evaluate(job, report_id):
     report_path = job.fileStore.readGlobalFile(report_id)
     with open(report_path) as f:
         content = f.read()
-    match = re.search(r"(\d+\.\d+)% mapped", content)
-    if match:
-        percent = float(match.group(1))
-        job.fileStore.logToMaster(f"Mapped: {percent}%")
-        if percent > 90:
-            job.fileStore.logToMaster("Result: OK")
+        job.fileStore.logToMaster(content)
+        match = re.search(r" mapped \((\d+)(?:\.\d+)?% ?", content)
+        if match:
+            percent = float(match.group(1))
+            job.fileStore.logToMaster(f"Mapped: {percent}%")
+            if percent > 90:
+                job.fileStore.logToMaster("Result: OK")
+            else:
+                job.fileStore.logToMaster("Result: Not OK")
         else:
-            job.fileStore.logToMaster("Result: Not OK")
-    else:
-        raise RuntimeError("Could not parse alignment percentage.")
+            raise RuntimeError("Could not parse alignment percentage.")
+
+def export_outputs(job, fastqc_html_id, report_id, output_dir):
+    job.fileStore.readGlobalFile(report_id, userPath=os.path.join(output_dir, "alignment_report.txt"))
+    job.fileStore.readGlobalFile(fastqc_html_id, userPath=os.path.join(output_dir, "fastqc_report.html"))
+    job.fileStore.logToMaster(f"Exported output files to {output_dir}")
 
 if __name__ == "__main__":
     parser = Job.Runner.getDefaultArgumentParser()
     parser.add_argument("fastq", help=".fastq.gz sequence file")
     parser.add_argument("reference", help=".fa reference file")
+    parser.add_argument("output_dir", help="Directory for outputs")
 
     options = parser.parse_args()
     options.clean = "always"
     options.logLevel = "INFO"
-    options.writeGraph = "workflow_graph.dot"
 
     fastq_file = os.path.abspath(options.fastq)
     ref_file = os.path.abspath(options.reference)
+    output_dir = os.path.abspath(options.output_dir)
+    
 
     with Toil(options) as toil:
         root = Job()
@@ -93,18 +96,19 @@ if __name__ == "__main__":
         fastq_id = toil.importFile("file://" + fastq_file)
         ref_id = toil.importFile("file://" + ref_file)
 
-        fastqc_job = root.addChild(Job.wrapJobFn(fastqc, fastq_id, toil))
+        fastqc_job = root.addChild(Job.wrapJobFn(fastqc, fastq_id))
+        fastqc_report_id = fastqc_job.rv()
+
+        index_job = root.addChild(Job.wrapJobFn(index_reference, ref_id))
+        align_job = index_job.addFollowOn(Job.wrapJobFn(align_reads, fastq_id, index_job.rv()))
+        bam_job = align_job.addFollowOn(Job.wrapJobFn(sam_to_bam, align_job.rv()))
         
-        # index_job = root.addChild(Job.wrapJobFn(index_reference, ref_id))
-        # align_job = index_job.addFollowOn(Job.wrapJobFn(align_reads, fastq_id, index_job.rv()))
-        # bam_job = align_job.addFollowOn(Job.wrapJobFn(sam_to_bam, align_job.rv()))
-        # flagstat_job = bam_job.addFollowOn(Job.wrapJobFn(flagstat, bam_job.rv(), toil))
-        # flagstat_job.addFollowOn(Job.wrapJobFn(evaluate, flagstat_job.rv()))
+        flagstat_job = bam_job.addFollowOn(Job.wrapJobFn(flagstat, bam_job.rv()))
+        report_id = flagstat_job.rv()
+        export_job = flagstat_job.addFollowOn(Job.wrapJobFn(
+            export_outputs, fastqc_report_id, report_id, output_dir
+        ))
+        
+        flagstat_job.addFollowOn(Job.wrapJobFn(evaluate, report_id))
 
         toil.start(root)
-
-    try:
-        subprocess.run("dot -Tpng workflow_graph.dot -o pipeline_graph.png", shell=True, check=True)
-        print("Pipeline graph saved as pipeline_graph.png")
-    except Exception as e:
-        print("Failed to generate pipeline graph:", e)
